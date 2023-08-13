@@ -42,3 +42,8 @@ npm run start
 - CSS
 - JavaScript
 - React
+
+
+### Screenshot of Project
+
+![Screenshot 2023-08-14 002559](https://github.com/Fizz007/Bibox_task/assets/114504997/cb0e26de-3fc4-46bd-8755-abee265abcf8)
