@@ -24,18 +24,18 @@ const Drag = () => {
     const imageAlreadyExists = existingImages.some((img) => img.alt === draggedData.name);
     
     if (!imageAlreadyExists) {
-      const newImage = document.createElement("img");
-      newImage.src = draggedData.image;
-      newImage.alt = draggedData.name;
-      newImage.classList.add("dragged-image");
-      newImage.style.cssText = `
-        width: 180px;
-        height: 180px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        padding: 20px;
+      const newImg = document.createElement("img");
+      newImg.src = draggedData.image;
+      newImg.alt = draggedData.name;
+      newImg.classList.add("dragged-image");
+      newImg.style.cssText = `
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 15px;
       `;
-      dragSpace.appendChild(newImage);
+      dragSpace.appendChild(newImg);
     }  
     
   };
