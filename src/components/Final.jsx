@@ -20,7 +20,7 @@ const Final = () => {
       <div className='final_container'>
           {data && data.map((elem,i)=> {
                 console.log(elem)
-            return <div className='final'>
+            return <div className='final' key={i}>
                 <img src={elem.image} alt="" />
             </div>
           })}
