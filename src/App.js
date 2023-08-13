@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from "react";
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Bike from './components/Bike';
+import Parts from "./components/Parts";
+import Drag from "./components/Drag";
+import Final from "./components/Final";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+    <Route path='/' element={<Bike/>}/>
+    <Route path='/parts' element={<Parts/>}/>
+    <Route path='/drag' element={<Drag/>}/>
+    <Route path='/final' element={<Final/>}/>
+    </Routes>
+     
+    </>
   );
 }
 
